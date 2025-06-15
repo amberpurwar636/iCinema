@@ -33,7 +33,7 @@ app.use("/api/auth", auth);
 app.use(express.static("frontend/build"));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+  res.sendFile(path.join("frontend", "build", "index.html"));
 });
 
 const port = process.env.PORT || 5000;
