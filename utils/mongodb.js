@@ -8,7 +8,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("MongoDb connected ..."))
+  .then(() => console.log("Mongodb connected ..."))
   .catch((err) => console.log(err));
 
 console.log(process.env.MONGO_URL);
